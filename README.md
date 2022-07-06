@@ -2,7 +2,7 @@
 
 # ITEGRANTES
 
-Axel GOody
+Axel Godoy
 Alexis Borsato
 
 # Pasos a seguir

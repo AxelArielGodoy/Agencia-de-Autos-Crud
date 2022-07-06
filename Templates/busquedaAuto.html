@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{%block title%}
+<title>Creación de autos</title>
+{%endblock title%} 
+
+{% block header %}
+<h1 class="mx-auto my-0 text-uppercase">Creación de vehiculo</h1>
+<p>
+    <form action={% url 'busqueda_auto' %} method="GET">
+        <input type="text" name="auto" id="auto">
+        <input type="submit" value="Buscar">
+        
+    </form>
+    {% endblock header %}
+</p>
+
