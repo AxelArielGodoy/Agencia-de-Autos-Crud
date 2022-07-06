@@ -7,13 +7,12 @@
 {% block header %}
 {% comment %} <h1 class="mx-auto my-0 text-uppercase">Creación de vehiculo</h1> {% endcomment %}
 <p>
-  <form action="{% url 'crear_auto' %}" method="post">
+  <form action="" method="post">
     {% csrf_token %}
 
     <table>{{form.as_table}}</table>
     
     <button class="btn btn-primary">Crear</button>
-
     {% comment %} <input type="submit" value="Enviar"> {% endcomment %}
     
   </form>

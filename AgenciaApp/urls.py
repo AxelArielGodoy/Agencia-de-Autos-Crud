@@ -1,11 +1,8 @@
-from .views import busquedaAuto, index, crear_auto
 from django.urls import path
-from AgenciaApp.views import busquedaAuto, index, crear_auto
+from AgenciaApp.views import index, crear_auto,busqueda_autos
 
 urlpatterns = [
     path('', index, name='index'),
     path('crearauto/', crear_auto, name='crear_auto'),
-    path('busquedaAuto/', busquedaAuto, name="busqueda_auto"),
-    # path('buscar/', buscar),
-   
+    path('busquedaAuto/', busqueda_autos, name="busquedaAuto"),  
 ]

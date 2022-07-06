@@ -5,13 +5,15 @@
 {%endblock title%} 
 
 {% block header %}
-<h1 class="mx-auto my-0 text-uppercase">Creación de vehiculo</h1>
+<h1 class="mx-auto my-0 text-uppercase">buscar</h1>
 <p>
-    <form action={% url 'busqueda_auto' %} method="GET">
-        <input type="text" name="auto" id="auto">
-        <input type="submit" value="Buscar">
-        
-    </form>
+    {% for auto in busqueda_autos %}
+    <li>Marca: {{auto.marca}} | Color: {{auto.color}} | Modelo: {{auto.modelo}}</li>{% endfor %}
+    <form action={% url 'busquedaAuto' %}>
+        {{form}}
+        <button class="btn btn-primary">Buscar</button>
+
+    </form>      
     {% endblock header %}
 </p>
 
