@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 
 {%block title%}
@@ -5,16 +6,20 @@
 {%endblock title%} 
 
 {% block header %}
-{% comment %} <h1 class="mx-auto my-0 text-uppercase">Creación de vehiculo</h1> {% endcomment %}
-<p>
-  <form action="" method="post">
-    {% csrf_token %}
+<h1 class="mx-auto my-0 text-uppercase">Creación de vehiculo</h1>
 
-    <table>{{form.as_table}}</table>
+<p>
+
+  <form action={% url 'crear_auto' %} method="post">
     
-    <button class="btn btn-primary">Crear</button>
-    {% comment %} <input type="submit" value="Enviar"> {% endcomment %}
+    {% csrf_token %}
+    <table align='center'>{{form.as_table}}</table>
+
+    <br>
+
+    <button class="btn btn-primary" href="#about">Crear</button>
     
   </form>
 </p>
+
 {% endblock %}

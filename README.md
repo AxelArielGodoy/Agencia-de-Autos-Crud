@@ -1,8 +1,20 @@
-# Aplicación de agencia de autos
+# APLICACIÓN DE AGENCIA DE AUTOS
 
-# ITEGRANTES
+# INTEGRANTES
 
-Axel Godoy
-Alexis Borsato
+1. Alexis Borsato
 
-# Pasos a seguir
+2. Axel Godoy
+
+# FUNCIONALIDADES
+
+- Crear auto
+- Buscar
+- Sobre nosotros
+
+# PARA PROBAR LA APP
+1. Ir a Agencia\settings.py
+2. Modificar en Templates la ruta de acceso
+3. Crear entorno virtual
+4. Instalar Django/requirements
+5. Levantar servidor
