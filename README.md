@@ -10,6 +10,8 @@
 
 - Crear auto
 - Buscar
+- Editar
+- Eliminar
 - Sobre nosotros
 
 # PARA PROBAR LA APP
