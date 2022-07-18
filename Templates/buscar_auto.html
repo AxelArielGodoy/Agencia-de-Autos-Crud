@@ -10,17 +10,23 @@
 
 <p>
     
+    
     <form action={% url 'buscar_auto' %}>
     
         {{form}}
         <button class="btn btn-primary">Buscar</button>
 
     </form>
-
+    
+    
     {% if listado_autos %}
         
         {%for auto in listado_autos%}
-        <li>Marca: {{auto.marca}} | Color: {{auto.color}} | Modelo: {{auto.modelo}}</li>
+        <li>
+            Marca: {{auto.marca}} | Color: {{auto.color}} | Modelo: {{auto.modelo}}
+            <a href={% url 'editar_auto' auto.id %}>Editar</a>
+            <a href={% url 'eliminar_auto' auto.id %}>Eliminar</a>
+        </li>
         {%endfor%}
         
     
@@ -30,7 +36,8 @@
         </ul>
     
         {% endif %}
-        
+        <a  class="btn btn-primary" href={% url 'crear_auto' %}>Crear Auto</a>
+    
     </p>
     
     {% endblock header %}

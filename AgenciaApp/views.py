@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from .models import Auto
 from .forms import BusquedaAuto, FormularioAuto
 
@@ -29,7 +29,8 @@ def crear_auto(request):
             )
             
             auto.save()
-            return render(request, "crear_auto.html")
+            # return render(request, "base.html")
+            return redirect('crear_auto')
 
     else:
         formulario_auto = FormularioAuto()
@@ -51,3 +52,33 @@ def buscar_auto(request):
 
 def sobre_nosotros(request):
     return render(request, "sobre_nosotros.html")
+
+
+def blog(request):
+    return render(request, "blog.html")
+
+def editar_auto(request, id):
+    auto = Auto.objects.get(id=id)
+    
+    if request.method == 'POST':
+        form = FormularioAuto(request.POST)
+        if form.is_valid():
+            auto.marca = form.cleaned_data.get('marca')
+            auto.color = form.cleaned_data.get('color')
+            auto.modelo = form.cleaned_data.get('modelo')
+            auto.save()
+            
+            return redirect('buscar_auto')
+        else:
+            return render(request, "crear_auto.html", {"form": formulario_auto, "auto": auto})        
+    
+    formulario_auto = FormularioAuto(initial={'marca': auto.marca, 'color': auto.color, 'modelo': auto.modelo})
+
+    return render(request, "editar_auto.html", {"form": formulario_auto, "auto": auto})
+
+def eliminar_auto(request, id):
+    auto = Auto.objects.get(id=id)
+    
+    auto.delete()
+    
+    return redirect('buscar_auto')
