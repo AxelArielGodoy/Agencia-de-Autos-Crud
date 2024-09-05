@@ -95,7 +95,7 @@ source venv/bin/activate
 En sistemas Windows:
 
 ```bash
-.\venv\Scripts\activate
+. venv/Scripts/activate
 ```
 
 Instalar Dependencias
