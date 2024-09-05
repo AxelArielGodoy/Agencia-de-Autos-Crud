@@ -54,9 +54,6 @@ def sobre_nosotros(request):
     return render(request, "sobre_nosotros.html")
 
 
-def blog(request):
-    return render(request, "blog.html")
-
 def editar_auto(request, id):
     auto = Auto.objects.get(id=id)
     

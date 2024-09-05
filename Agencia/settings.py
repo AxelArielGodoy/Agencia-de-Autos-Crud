@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Agencia.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\ariel\ASDF\Entrega1--GodoyBorsato\Templates'],
+        'DIRS': [r'Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
