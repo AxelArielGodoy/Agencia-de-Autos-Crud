@@ -23,7 +23,7 @@ A continuación, se muestran algunas capturas de pantalla de la aplicación en f
 
 ### Página Principal
 
-![Página Principal](/Entrega1--GodoyBorsato/imgs/Principal.png)
+![Página Principal](Entrega1--GodoyBorsato\imgs\Principal.png)
 
 Descripción: Muestra la interfaz principal donde los usuarios pueden ver la lista de autos y acceder a las funcionalidades básicas.
 
