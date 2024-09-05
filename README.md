@@ -23,37 +23,61 @@ A continuación, se muestran algunas capturas de pantalla de la aplicación en f
 
 ### Página Principal
 
+<<<<<<< HEAD
 ![Página Principal](/Entrega1--GodoyBorsato/imgs/Principal.png)
+=======
+![Página Principal](/imgs/Principal.png)
+>>>>>>> d39c2d4635438c6b7d84a4253af31c7fe779eeec
 
 Descripción: Muestra la interfaz principal donde los usuarios pueden ver la lista de autos y acceder a las funcionalidades básicas.
 
 ### Crear Auto
 
+<<<<<<< HEAD
 ![Crear Auto](/Entrega1--GodoyBorsato/imgs/Crear.png)
+=======
+![Crear Auto](/imgs/Crear.png)
+>>>>>>> d39c2d4635438c6b7d84a4253af31c7fe779eeec
 
 Descripción: Interfaz para añadir un nuevo auto a la base de datos. Aquí se ingresan los detalles del auto.
 
 ### Buscar Auto
 
+<<<<<<< HEAD
 ![Buscar Auto](/Entrega1--GodoyBorsato/imgs/Buscar.png)
+=======
+![Buscar Auto](/imgs/Buscar.png)
+>>>>>>> d39c2d4635438c6b7d84a4253af31c7fe779eeec
 
 Descripción: Permite a los usuarios buscar autos por diferentes criterios, como marca, modelo, etc.
 
 ### Editar Auto
 
+<<<<<<< HEAD
 ![Editar Auto](/Entrega1--GodoyBorsato/imgs/Editar.png)
+=======
+![Editar Auto](/imgs/Editar.png)
+>>>>>>> d39c2d4635438c6b7d84a4253af31c7fe779eeec
 
 Descripción: Pantalla para modificar la información de un auto existente.
 
 ### Eliminar Auto
 
+<<<<<<< HEAD
 ![Eliminar Auto](/Entrega1--GodoyBorsato/imgs/EditarEliminar.png)
+=======
+![Eliminar Auto](/imgs/EditarEliminar.png)
+>>>>>>> d39c2d4635438c6b7d84a4253af31c7fe779eeec
 
 Descripción: Confirmación para eliminar un auto de la base de datos.
 
 ### Sobre Nosotros
 
+<<<<<<< HEAD
 ![Sobre Nosotros](/Entrega1--GodoyBorsato/imgs/SobreNosotros.png)
+=======
+![Sobre Nosotros](/imgs/SobreNosotros.png)
+>>>>>>> d39c2d4635438c6b7d84a4253af31c7fe779eeec
 
 Descripción: Página con información sobre la agencia y el equipo de desarrollo.
 
